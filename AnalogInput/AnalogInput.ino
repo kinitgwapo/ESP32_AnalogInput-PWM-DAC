@@ -17,6 +17,6 @@ void loop() {
   // Automatically calibrates a raw analog value to mV
   uint32_t analogTomV = analogReadMilliVolts(POTENTIOMETER_PIN);
 
-  Serial.print("Raw Value: " + String(rawAnalogValue) + "\t Millivolts: " + String(analogTomV));
+  Serial.println("Raw Value: " + String(rawAnalogValue) + "\t Millivolts: " + String(analogTomV));
   delay(100);
 }
